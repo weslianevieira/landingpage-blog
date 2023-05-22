@@ -11,7 +11,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts" + search);
+      const res = await axios.get("https://orientalfisiodf-api.onrender.com/api/posts" + search);
       setPosts(res.data);
     };
     fetchPosts();

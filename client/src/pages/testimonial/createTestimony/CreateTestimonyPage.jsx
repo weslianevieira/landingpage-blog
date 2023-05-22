@@ -20,7 +20,7 @@ export default function CreateTestimonyPage() {
     };
 
     try {
-      const res = await axios.post("/testimonies", newTestimony);
+      const res = await axios.post("https://orientalfisiodf-api.onrender.com/api/testimonies", newTestimony);
       window.location.replace("/testimonial");
     } catch (err) {}
   }

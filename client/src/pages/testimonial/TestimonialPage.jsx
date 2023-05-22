@@ -10,7 +10,7 @@ export default function TestimonialPage() {
 
   useEffect(() => {
     const fetchTestimonies = async () => {
-      const res = await axios.get("/testimonies" + search);
+      const res = await axios.get("https://orientalfisiodf-api.onrender.com/api/testimonies" + search);
       setTestimonies(res.data);
     };
     fetchTestimonies();

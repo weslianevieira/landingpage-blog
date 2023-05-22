@@ -12,12 +12,12 @@ export default function SinglePost() {
   const [post, setPost] = useState({});
   const location = useLocation();
   const path = location.pathname.split("/")[2];
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://orientalfisiodf-api.onrender.com/images/";
   const { user } = useContext(Context);
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/" + path);
+      const res = await axios.get("https://orientalfisiodf-api.onrender.com/api/posts/" + path);
       setPost(res.data);
       setTitle(res.data.title);
       setContent(res.data.content);
@@ -27,7 +27,7 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/posts/${post._id}`, {
+      await axios.delete(`https://orientalfisiodf-api.onrender.com/api/posts/${post._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/blog");
@@ -36,7 +36,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`/posts/${post._id}`, {
+      await axios.put(`https://orientalfisiodf-api.onrender.com/api/posts/${post._id}`, {
         username: user.username,
         title,
         content,
@@ -79,7 +79,7 @@ export default function SinglePost() {
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
             Autor:
-            <Link to={`/?user=${post.username}`} className="link">
+            <Link to={`https://orientalfisiodf-api.onrender.com/api/?user=${post.username}`} className="link">
               <b> {post.username}</b>
             </Link>
           </span>

@@ -5,16 +5,16 @@ import { formatDistance, subDays } from "date-fns";
 import pt from "date-fns/locale/pt-BR";
 
 export default function Post({ post }) { 
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://orientalfisiodf-api.onrender.com/images/";
 
   return (
     <div className="post">
-      <Link to={`/post/${post._id}`} className="link-post">
+      <Link to={`https://orientalfisiodf-api.onrender.com/api/post/${post._id}`} className="link-post">
         <div className="post-img">
         {post.photo && <img src={PF + post.photo} alt="illustration" />}
         </div>
       </Link>
-      <Link to={`/post/${post._id}`} className="link-post">
+      <Link to={`https://orientalfisiodf-api.onrender.com/api/post/${post._id}`} className="link-post">
         <div className="post-text">
           <h2>{post.title} </h2>
           <p className="post-info">

@@ -9,7 +9,7 @@ export default function Testimonials({ testimony }) {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/testimonies/${testimony._id}`, {
+      await axios.delete(`https://orientalfisiodf-api.onrender.com/api/testimonies/${testimony._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/testimonial");
