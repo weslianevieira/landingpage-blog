@@ -9,12 +9,12 @@ export default function Post({ post }) {
 
   return (
     <div className="post">
-      <Link to={`https://orientalfisiodf-api.onrender.com/api/post/${post._id}`} className="link-post">
+      <Link to={`https://orientalfisiodf-api.onrender.com/api/posts/${post._id}`} className="link-post">
         <div className="post-img">
         {post.photo && <img src={PF + post.photo} alt="illustration" />}
         </div>
       </Link>
-      <Link to={`https://orientalfisiodf-api.onrender.com/api/post/${post._id}`} className="link-post">
+      <Link to={`https://orientalfisiodf-api.onrender.com/api/posts/${post._id}`} className="link-post">
         <div className="post-text">
           <h2>{post.title} </h2>
           <p className="post-info">
