@@ -27,16 +27,15 @@ export default function BriefSlider() {
 
         <p>Renato R.</p>
         <img src={dumbbell} alt="dumbbell-pic" />
+        <Link to='/testimonial'>Ver todos</Link>
       </div>
 
       <div className="brief-single">
         <p>
-          "Ea et magna do occaecat cillum consequat. Minim et exercitation ad
-          esse dolor pariatur nulla et minim aliquip. Labore pariatur
-          exercitation nisi labore nisi reprehenderit labore veniam."
+          "Tenho artrose severa no joelho esquerdo e já fiz cirurgia de ruptura de manguito rotador nos dois braços. Cheguei na clínica com muitas dores, mal conseguia andar. Sai muito satisfeita sem dor alguma. Dois dias depois as dores voltaram, não tão intensas e por isso vou voltar p fazer nova sessão c Dr Ademar, um doce de pessoa."
         </p>
 
-        <p>John Doe</p>
+        <p>Regina S</p>
         <img src={""} alt="autor" />
         <Link to='/testimonial'>Ver todos</Link>
       </div>
