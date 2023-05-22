@@ -1,0 +1,97 @@
+section.metodologia {
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background: white;
+  border-top: 3px solid #ffca00;
+  box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+section.metodologia h2 {
+  color: #232931;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Sora", sans-serif;
+}
+
+section.metodologia p {
+  font-size: 14px;
+  color: #979797;
+  margin: 15px 0;
+}
+
+section.metodologia a {
+  text-decoration: none;
+  background-color: #00aaed;
+  color: #000;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+section.metodologia a:hover {
+  background-color: #000;
+  color: #00aaed;
+}
+
+footer {
+  position: relative;
+  padding-top: 300px;
+  padding-bottom: 100px;
+  background: white;
+}
+
+footer > .center {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-footer {
+  width: 20%;
+  cursor: pointer;
+}
+
+.col-footer h2 {
+  color: #232931;
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.col-footer a {
+  color: #979797;
+  font-size: 13px;
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+}
+
+.col-footer img {
+  width: 40%;
+  text-align: right;
+}
+
+#copyright {
+  cursor: none;
+}
+
+@media screen and (max-width: 768px) {
+  .col-footer {
+    width: 30%;
+  }
+
+  .col-footer img {
+    display: none;
+  }
+}

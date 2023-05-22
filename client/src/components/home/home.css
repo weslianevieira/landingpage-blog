@@ -1,0 +1,190 @@
+/*** HomeSlider **/
+.slider-container {
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.slider-container p {
+  text-align: center;
+  color: #202020;
+  padding: 10px;
+}
+
+.slider-container img {
+width: 220px;
+height: 200px;
+}
+
+/**/
+
+/*** InfoHome ***/
+
+section.diferenciais {
+  padding: 30px 0;
+  background-color: #f4f9fd;
+}
+
+section.diferenciais h2 {
+  color: #202020;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 3rem;
+}
+
+.icons-diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-single-diferenciais {
+  text-align: center;
+  width: 33.3%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.box-single-diferenciais img {
+  max-width: 100%;
+  max-height: 35vh;
+}
+
+.box-single-diferenciais h3 {
+  font-size: 17px;
+  margin: 5px 0;
+  color: #000;
+  font-weight: normal;
+}
+
+.box-single-diferenciais p {
+  font-size: 14px;
+  color: #202020;
+}
+
+/**/
+
+/*** AboutClinic ***/
+
+section.about-team {
+  padding: 40px 0;
+  background-color: #d3e5f3;
+}
+
+.img-team img {
+  max-width: 100%;
+  margin: 0 0 0 7rem;
+}
+
+.team-description-2 {
+  padding: 0 20px;
+}
+
+.team-description-2 h2 {
+  color: #202020;
+  line-height: 35px;
+  font-size: 24px;
+  margin-bottom: 3rem;
+  font-family: "Lora", serif;
+}
+
+.team-description-2 p {
+  color: #272727;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 30px;
+}
+
+/**/
+
+/*** Brief ***/
+
+section.brief {
+  padding: 80px 0;
+  background-color: #23188f;
+}
+
+section.brief h2 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: "Lora", serif;
+  margin-bottom: 1rem;
+}
+
+.brief-box {
+  margin: 10px auto;
+  max-width: 800px;
+  overflow: hidden;
+  display: block;
+}
+
+.brief-single {
+  width: 100%;
+  display: inline-block;
+}
+
+.brief-single p {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.brief-single img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 40%;
+}
+
+.brief-single a {
+  width: 8rem;
+  height: 2rem;
+  background-color: #00aaed;
+  color: #000;
+  border-radius: 10%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.brief-single a:hover {
+  background-color: #000;
+  color: #00aaed;
+}
+
+/**/
+
+@media screen and (max-width: 768px) {
+  .contact-single {
+    margin-bottom: 30px;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .box-single-diferenciais {
+    width: 100%;
+  }
+
+  .w50 {
+    width: 100%;
+  }
+
+  .img-team img {
+    max-width: 100%;
+    margin: 10% auto;
+    padding: 0 50px;
+  }
+
+  section.brief {
+    padding: 2rem 0;
+    background-color: #23188f;
+    height: max-content;
+  }
+}

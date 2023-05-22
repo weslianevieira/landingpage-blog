@@ -1,0 +1,156 @@
+.top {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topLeft img {
+  width: 45px;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#topListItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .topCenter {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(50vh - 60px);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .topCenter.active {
+    transform: translateX(0);
+  }
+
+  .topList {
+    list-style: none;
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  #topList-mobile-off {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #topListItem-mobile-on{
+    margin-right: 4rem;
+  }
+
+  .topListItem {
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .link {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .topSearchIcon {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    background-color: #000;
+  }
+
+  .line.active:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .line.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.active:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  #topListItem{
+    margin-right: 0;
+  }
+}

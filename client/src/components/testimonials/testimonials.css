@@ -1,0 +1,106 @@
+section.testimonial-container {
+  margin-bottom: 3%;
+}
+
+div.wrapper {
+  width: 60%;
+  height: 200px;
+  display: table;
+  border: 5px solid #00aaed;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 0px 17px #000;
+}
+
+div.title,
+div.description {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+div.description {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 25px;
+}
+
+div.title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px 0 0;
+  font-family: "Sora", sans-serif;
+}
+
+small {
+  display: block;
+  font-size: 25px;
+  text-align: right;
+  color: rgb(49, 49, 49);
+}
+
+p.author {
+  margin-top: 5px;
+  font-size: small;
+  font-weight: 500;
+  text-align: center;
+}
+
+div.border-radius {
+  border-radius: 30px;
+}
+
+.singleTestimonyEdit {
+  font-size: 20px;
+}
+
+.singleTestimonyIcon {
+  cursor: pointer;
+  /* margin-right: rem; */
+}
+
+.singleTestimonyIcon:first-child {
+  color: tomato;
+}
+
+@media (max-width: 767px) {
+  section.testimonial-container {
+    margin: 30% auto;
+  }
+
+  div.wrapper {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    position: relative;
+    border: 5px solid #00aaed;
+    box-shadow: 0px 0px 17px #000;
+  }
+
+  div.title,
+  div.description {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  div.title {
+    font-size: 25px;
+    padding: 0;
+  }
+
+  div.description {
+    font-size: 16px;
+  }
+
+  small {
+    font-size: 18px;
+    text-align: center;
+  }
+}

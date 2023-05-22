@@ -1,0 +1,20 @@
+div.clients-slider {
+  margin: 2% auto;
+  height: 68vh;
+}
+
+.clients-slider .center h2 {
+  color: #202020;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  div.clients-slider {
+    margin: 10% auto;
+    height: 60vh;
+  }
+}

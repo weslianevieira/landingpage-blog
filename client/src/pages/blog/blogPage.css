@@ -1,0 +1,27 @@
+main {
+  max-width: 80%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.heading-post {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Lora", serif;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-wrap: wrap;
+    flex-direction: column-reverse; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar {
+    order: 1;
+    width: 100%; 
+  }
+}

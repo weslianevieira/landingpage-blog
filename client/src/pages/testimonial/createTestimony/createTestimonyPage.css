@@ -1,0 +1,36 @@
+form.createTestimony {
+  max-width: 65%;
+  margin: 10% auto;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Lora", serif;
+}
+
+input {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  border: 2px solid #bbb;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px 7px;
+}
+
+.editor {
+  height: 11rem;
+}
+
+.createTestimony-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.btn {
+  width: 30%;
+  margin-top: 4rem;
+  padding: 5px 0;
+}

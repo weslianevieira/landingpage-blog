@@ -1,0 +1,11 @@
+.testimonialPage{
+    margin: 10% auto;
+}
+
+h1.testimonialPage-heading {
+  color: #202020;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Lora", serif;
+}
