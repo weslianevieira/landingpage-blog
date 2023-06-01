@@ -1,4 +1,4 @@
-form.register{
+form.register {
   max-width: 300px;
   margin: 0 auto;
   margin-top: 10%;
@@ -28,12 +28,11 @@ button {
   border-radius: 5px;
   padding: 7px 0;
   color: #fff;
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   form.login {
     margin: 20% auto;
-
   }
 }
