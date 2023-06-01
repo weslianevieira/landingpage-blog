@@ -10,11 +10,12 @@
   text-align: center;
   color: #202020;
   padding: 10px;
+  font-style: italic;
 }
 
 .slider-container img {
-width: 220px;
-height: 200px;
+  width: 220px;
+  height: 200px;
 }
 
 /**/

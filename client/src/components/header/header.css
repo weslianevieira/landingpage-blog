@@ -41,6 +41,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-transform: capitalize;
 }
 
 .topListItem {
@@ -66,7 +67,7 @@
     top: 50px;
     left: 0;
     width: 100%;
-    height: calc(50vh - 60px);
+    height: calc(42vh - 60px);
     background-color: #fff;
     display: flex;
     flex-direction: column;

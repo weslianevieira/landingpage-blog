@@ -25,7 +25,7 @@ export default function BriefSlider() {
           profissionalismo de vocês. Nota 1000!!"
         </p>
 
-        <p>Renato R.</p>
+        <p>- Renato R.</p>
         <img src={dumbbell} alt="dumbbell-pic" />
         <Link to='/testimonial'>Ver todos</Link>
       </div>
@@ -35,8 +35,7 @@ export default function BriefSlider() {
           "Tenho artrose severa no joelho esquerdo e já fiz cirurgia de ruptura de manguito rotador nos dois braços. Cheguei na clínica com muitas dores, mal conseguia andar. Sai muito satisfeita sem dor alguma. Dois dias depois as dores voltaram, não tão intensas e por isso vou voltar p fazer nova sessão c Dr Ademar, um doce de pessoa."
         </p>
 
-        <p>Regina S</p>
-        <img src={""} alt="autor" />
+        <p>- Regina S</p>
         <Link to='/testimonial'>Ver todos</Link>
       </div>
     </Slider>
