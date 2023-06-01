@@ -6,7 +6,6 @@ import { Context } from "../../context/Context";
 export default function Testimonials({ testimony }) {
   const { user } = useContext(Context);
 
-
   const handleDelete = async () => {
     try {
       await axios.delete(`https://orientalfisiodf-api.onrender.com/api/testimonies/${testimony._id}`, {

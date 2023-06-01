@@ -103,4 +103,8 @@ div.border-radius {
     font-size: 18px;
     text-align: center;
   }
+  
+  section.testimonial-container {
+  margin-bottom: 1%;
+}
 }
