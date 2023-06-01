@@ -52,12 +52,16 @@
     width: 25%;
   }
 /**/
+
   @media screen and (max-width: 768px) {
     section.about-time {
-      margin: 30% auto;
+      margin: 0 auto;
+      margin-top: 25%;
     } 
 
     section.about-images {
      display: none;
     }
+
+   
   }
