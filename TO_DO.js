@@ -1,13 +1,14 @@
 /*
 
-TODO -> delete autor img in brief-slider component, second block of code
+TODO -> 
 TODO -> create emailjs to recieve testimony
+TODO -> 
 
 !DOING -> 
 !DOING -> 
 
-*DONE -> 
-*DONE -> 
+*DONE -> delete autor img in brief-slider component, second block of code
+*DONE -> remove quiropraxia, fisioterapia en shiatsu from home
 
 
 */
