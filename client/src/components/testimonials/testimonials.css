@@ -68,7 +68,7 @@ div.border-radius {
 
 @media (max-width: 767px) {
   section.testimonial-container {
-    margin: 30% auto;
+    margin: 4% auto;
   }
 
   div.wrapper {
@@ -103,8 +103,5 @@ div.border-radius {
     font-size: 18px;
     text-align: center;
   }
-  
-  section.testimonial-container {
-  margin-bottom: 1%;
-}
+
 }
