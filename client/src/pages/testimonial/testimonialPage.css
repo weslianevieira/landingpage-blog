@@ -13,6 +13,6 @@ h1.testimonialPage-heading {
 
 @media screen and (max-width: 768px) {
   h1.testimonialPage-heading {
-    margin: 20% 0 0 0;
+    margin: 20% 0 2% 0;
   }
 }
