@@ -7,7 +7,7 @@ import axios from "axios";
 export default function TestimonialPage() {
   const [testimonies, setTestimonies] = useState([]);
   const { search } = useLocation();
-
+ 
   useEffect(() => {
     const fetchTestimonies = async () => {
       const res = await axios.get("https://orientalfisiodf-api.onrender.com/api/testimonies" + search);

@@ -37,8 +37,8 @@ button.btn {
 
 @media screen and (max-width: 768px) {
   form.createTestimony {
-    margin-top: 20%;
-   margin-bottom: 10%;
+    margin-top: 25%;
+   margin-bottom: 20%;
    margin: 0 auto;
   }
 }

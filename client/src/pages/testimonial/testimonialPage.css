@@ -1,5 +1,5 @@
 .testimonialPage {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 5%;
   margin: 0 auto;
 }
@@ -10,6 +10,7 @@ h1.testimonialPage-heading {
   font-weight: normal;
   text-align: center;
   font-family: "Lora", serif;
+  
 }
 
 @media screen and (max-width: 768px) {
