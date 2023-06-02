@@ -18,6 +18,8 @@ import CreateTestimonyPage from "./pages/testimonial/createTestimony/CreateTesti
 import Header from "./components/header/Header";
 import ContactsFooter from "./components/footer/ContactsFooter";
 import WhatsappBtn from "./components/whatapp/WhatsappBtn";
+import SendTestimonialPage from "./pages/testimonial/sendTestimonial/SendTestimonialPage";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -52,8 +54,12 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/writePost" element={<CreatePostPage />} />
             <Route path="/writeTestimony" element={<CreateTestimonyPage />} />
+            <Route path="/sendTestimony" element={<SendTestimonialPage />} />
             <Route path="/post/:postId" element={<SinglePostPage />} />
-            <Route path='*' element={<div>Erro 404. Págiana não encontrada!</div>} />
+            <Route
+              path="*"
+              element={<div>Erro 404. Págiana não encontrada!</div>}
+            />
           </Routes>
           <ContactsFooter />
           <WhatsappBtn />

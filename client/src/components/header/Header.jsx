@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <div className="top">
       <div className="topLeft">
-      <img src={shortLogo} alt="logo" />
+        <img src={shortLogo} alt="logo" />
       </div>
       <div className={`topCenter ${menuOpen ? "active" : ""}`}>
         <ul className="topList" id="topList-mobile-off">
@@ -42,6 +42,11 @@ export default function Header() {
           <li className="topListItem">
             <Link className="link" to="/blog">
               Blog
+            </Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/sendTestimony">
+              Envie Seu Depoimento
             </Link>
           </li>
           <li className="topListItem">
