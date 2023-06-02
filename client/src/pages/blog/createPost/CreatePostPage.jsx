@@ -10,7 +10,7 @@ export default function CreatePostPage() {
   const [content, setContent] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
- 
+
   async function createNewPost(e) {
     e.preventDefault();
     const newPost = {
@@ -29,13 +29,19 @@ export default function CreatePostPage() {
       newPost.photo = filename;
 
       try {
-        await axios.post("https://orientalfisiodf-api.onrender.com/api/upload", data);
+        await axios.post(
+          "https://orientalfisiodf-api.onrender.com/api/upload",
+          data
+        );
       } catch (err) {}
     }
 
     try {
-      const res = await axios.post("https://orientalfisiodf-api.onrender.com/api/posts", newPost);
-     /*  window.location.replace("/post/" + res.data._id); */
+      const res = await axios.post(
+        "https://orientalfisiodf-api.onrender.com/api/posts",
+        newPost
+      );
+      /*  window.location.replace("/post/" + res.data._id); */
       window.location.replace("/blog");
     } catch (err) {}
   }
@@ -51,7 +57,9 @@ export default function CreatePostPage() {
       />
       <input
         type="text"
-        placeholder={"Escreva aqui a primeira frase ou uma breve introdução do texto"}
+        placeholder={
+          "Escreva aqui a primeira frase ou uma breve introdução do texto"
+        }
         value={desc}
         onChange={(e) => setDesc(e.target.value)}
       />
@@ -60,10 +68,10 @@ export default function CreatePostPage() {
         <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
       )}
       <Editor className="editor" value={content} onChange={setContent} />
-      <div className="createPost-btn" >
-      <button className="btn" type="submit">
-        Salvar
-      </button>
+      <div className="createPost-btn">
+        <button className="btn" type="submit">
+          Salvar
+        </button>
       </div>
     </form>
   );
