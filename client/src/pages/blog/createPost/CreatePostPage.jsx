@@ -10,7 +10,7 @@ export default function CreatePostPage() {
   const [content, setContent] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
-
+ 
   async function createNewPost(e) {
     e.preventDefault();
     const newPost = {
