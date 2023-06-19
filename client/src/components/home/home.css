@@ -23,7 +23,7 @@
 /*** InfoHome ***/
 
 section.diferenciais {
-  padding: 30px 0;
+  padding: 80px 0;
   background-color: #f4f9fd;
 }
 
@@ -188,4 +188,8 @@ section.brief h2 {
     background-color: #23188f;
     height: max-content;
   }
+
+  section.diferenciais {
+  padding: 30px 0;
+}
 }

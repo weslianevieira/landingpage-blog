@@ -28,12 +28,19 @@ button {
   border-radius: 5px;
   padding: 7px 0;
   color: #fff;
-margin-top: 20px;
+  margin-top: 20px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
   form.login {
     margin: 20% auto;
-
   }
 }
